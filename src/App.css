@@ -1,38 +1,77 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;800&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: mulish;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar a {
+  font-size: 1.3rem;
+  text-transform: capitalize;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.nav-item{
+  margin-right: 40px;
+}
+.menu-active{
+  font-weight: bold;
+  border-bottom: 1px solid #565387;
+}
+
+.navbar a:hover{
+  color : #3498db !important;
+}
+
+.right-section{
+  padding-top: 100px;
+}
+
+.brand-name{
+  color: lightseagreen
+}
+
+.rocket__img{
+  width: 560px;
+  height: 400px;
+}
+
+.right_section p{
+  font-size: 20px;
+}
+
+.get-started{
+  font-size: 20px;
+  border-radius: 50px;
+  transition: 0.5s;
+  color: cadetblue;
+  padding: 10px 30px;
+  text-decoration: none;
+}
+
+.header-img{
+  text-align: right;
+}
+
+#header .animated{
+  animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+
+@-webkit-keyframes up-down{
+  0% {
+    transform : translateY(10px)
   }
+100% {
+  transform: translateY(-10px);
+}
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@-webkit-keyframes up-down{
+  0% {
+    transform : translateY(10px)
   }
-  to {
-    transform: rotate(360deg);
-  }
+100% {
+  transform: translateY(-10px);
+}
 }
